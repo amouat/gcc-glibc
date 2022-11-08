@@ -151,6 +151,7 @@ jobs:
           name: ${{ env.REPO_NAME }}
           location: cgr.dev/chainguard/${{ env.REPO_NAME }}
           description: "Minimal container image for building C applications (which require glibc)."
+          exclude-tags: "12-bullseye, 12.2-bullseye, 12.2.0-bullseye, 12.2.0-r6-bullseye"
           push-to-repo: true
 
       # Post to slack when things fail.
